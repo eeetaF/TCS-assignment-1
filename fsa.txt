@@ -1,0 +1,5 @@
+states=[s1,s2,s3]
+alpha=[a,b]
+init.st=[s1]
+fin.st=[s3]
+trans=
