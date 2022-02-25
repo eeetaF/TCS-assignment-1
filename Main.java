@@ -58,15 +58,15 @@ public class Main {
         // Any change of "exception" will raise an Exception.
         try {
             // checking if input is valid
-            if (    !(inputLines[0].substring(0,8).equals("states=[")) ||
+            if (    !(inputLines[0].startsWith("states=[")) ||
                     !(inputLines[0].charAt(inputLines[0].length()-1) == ']') ||
-                    !(inputLines[1].substring(0,7).equals("alpha=[")) ||
+                    !(inputLines[1].startsWith("alpha=[")) ||
                     !(inputLines[1].charAt(inputLines[1].length()-1) == ']') ||
-                    !(inputLines[2].substring(0,9).equals("init.st=[")) ||
+                    !(inputLines[2].startsWith("init.st=[")) ||
                     !(inputLines[2].charAt(inputLines[2].length()-1) == ']') ||
-                    !(inputLines[3].substring(0,8).equals("fin.st=[")) ||
+                    !(inputLines[3].startsWith("fin.st=[")) ||
                     !(inputLines[3].charAt(inputLines[3].length()-1) == ']') ||
-                    !(inputLines[4].substring(0,7).equals("trans=[")) ||
+                    !(inputLines[4].startsWith("trans=[")) ||
                     !(inputLines[4].charAt(inputLines[4].length()-1) == ']')
             ) throw new Exception("5");
 
